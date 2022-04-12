@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Dancing+Script:wght@500&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-image: -webkit-linear-gradient(
+    top,
+    #d0e9f0 0%,
+    #faf3d9 40%,
+    #fbd2d0 100%
+  );
+}
+
+h2 {
+  font-family: "Dancing Script", cursive;
+  font-size: 36px;
+  font-weight: 600;
+  color: #8834bd;
+}
+
+h3 {
+  font-family: "Amatic SC", cursive;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.main-title {
+  animation: appear;
+  animation-duration: 2.5s;  
+}
+
+.sub-title {
+  animation-name: appear, scaled;
+  animation-duration: 6s, 3s;
+  animation-iteration-count: 1, infinite;  
+}
+
+.baloon1 {
+  width: 80px;  
+  height: 200px;
+  position: absolute;    
+  bottom: -90px;
+  left: 0;
+}
+.baloon2 {
+  width: 80px;  
+  height: 200px;
+  position: absolute;    
+  bottom: -75px;
+  right: 0;
+}
+
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes scaled {
+  0% {
+    transform: scale(0.9);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.9);
+  }
+}

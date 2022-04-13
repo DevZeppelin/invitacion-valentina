@@ -25,8 +25,8 @@ function App() {
         </div>
         <div className="w-1 bg-pink-300"></div>
         <div className="mx-auto p-0 my-auto pr-6 md:p-14">
-          <h3>De 12:30 hs</h3>
-          <h3>a 18:00 hs</h3>
+          <h3>De 12:00 hs</h3>
+          <h3>a 18:30 hs</h3>
         </div>
       </div>
       <div id="lugar" className="p-14 text-center">
